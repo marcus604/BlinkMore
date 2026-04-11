@@ -11,11 +11,11 @@ If you like the free version consider [BlinkMore](http://oxremy.github.io/BuyBli
 
 ## Requirements
 
-- macOS 14 (Sonoma) or later 
-- Uses Mac's built-in front facing camera 
+- macOS 14 (Sonoma) or later (Confirmed working on macOS 26 Tahoe)
+- Uses Mac's built-in front facing camera or external camera
 
 ## Install
-Download the BlinkMoreFree.dmg file above. 
+Download the .dmg from the releases
 
 ## Privacy
 
