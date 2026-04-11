@@ -1,0 +1,60 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-release:
+    runs-on: macos-15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate version tag
+        id: version
+        run: |
+          DATE_TAG="v$(date +'%Y.%m.%d')"
+          # Append build number if tag already exists today
+          if git rev-parse "$DATE_TAG" >/dev/null 2>&1; then
+            BUILD=1
+            while git rev-parse "${DATE_TAG}.${BUILD}" >/dev/null 2>&1; do
+              BUILD=$((BUILD + 1))
+            done
+            TAG="${DATE_TAG}.${BUILD}"
+          else
+            TAG="$DATE_TAG"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Install xcodegen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build Release
+        run: xcodebuild -project BlinkMore.xcodeproj -scheme BlinkMore -configuration Release build
+
+      - name: Find built app
+        id: app
+        run: |
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "BlinkMore.app" -path "*/Release/*" | head -1)
+          echo "path=$APP_PATH" >> "$GITHUB_OUTPUT"
+
+      - name: Create DMG
+        run: |
+          STAGING=$(mktemp -d)
+          cp -R "${{ steps.app.outputs.path }}" "$STAGING/"
+          hdiutil create -volname "BlinkMoreFree" -srcfolder "$STAGING" -ov -format UDZO BlinkMoreFree.dmg
+          rm -rf "$STAGING"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          files: BlinkMoreFree.dmg
+          generate_release_notes: true

@@ -454,7 +454,7 @@ class EyeTrackingService: NSObject, ObservableObject, AVCaptureVideoDataOutputSa
     /// Discover all available cameras on the system
     private func discoverAvailableCameras() {
         let discoverySession = AVCaptureDevice.DiscoverySession(
-            deviceTypes: [.builtInWideAngleCamera, .externalUnknown],
+            deviceTypes: [.builtInWideAngleCamera, .external],
             mediaType: .video,
             position: .unspecified
         )

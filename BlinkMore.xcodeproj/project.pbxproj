@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F3C53D251DD0F2F7C3C6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74ECB0A1756F16821BAFFD1 /* Assets.xcassets */; };
+		28DD7ADC6C71693A81314DFA /* FadeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D0C8A20F2F6E9DF02A008 /* FadeService.swift */; };
+		2C73D82D0B697590672FA806 /* EyeTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616E446DC1B530B1981F83D2 /* EyeTrackingService.swift */; };
+		3E7B7EA68B894E67A318AF90 /* BlinkMoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6274443732C120E6818BB2 /* BlinkMoreApp.swift */; };
+		592643FF5AE6FB9714F38122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB70909D1EB94D857003B8 /* AppDelegate.swift */; };
+		76EA3CF5A126D58471CCFDCA /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96990187F69F945E4D702804 /* StatusBarController.swift */; };
+		7EFD0FF97468126D2527E3FF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4982A22978038B238387E3DC /* OnboardingView.swift */; };
+		8D50A5ED492971CC35568C81 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092981BCDD7B76301692366E /* PreferencesService.swift */; };
+		B3A37C3E9532FF15176EE9E0 /* PermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C1FA789D9C85D3678D1DA /* PermissionsService.swift */; };
+		E849CB6418AB167AF3BF0D92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28371052C9220D6741036EC3 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		092981BCDD7B76301692366E /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
+		1F3C1FA789D9C85D3678D1DA /* PermissionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsService.swift; sourceTree = "<group>"; };
+		28371052C9220D6741036EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		396C10B9D2501D882031A1F4 /* BlinkMore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlinkMore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BC959493BA54E0AA18F176 /* BlinkMore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlinkMore.entitlements; sourceTree = "<group>"; };
+		4982A22978038B238387E3DC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		58B89E6BCD453ED12AC460E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		616E446DC1B530B1981F83D2 /* EyeTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingService.swift; sourceTree = "<group>"; };
+		96990187F69F945E4D702804 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		AFAB70909D1EB94D857003B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D74ECB0A1756F16821BAFFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA6274443732C120E6818BB2 /* BlinkMoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkMoreApp.swift; sourceTree = "<group>"; };
+		F48D0C8A20F2F6E9DF02A008 /* FadeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02EB5B5CE8483DBDA9644115 = {
+			isa = PBXGroup;
+			children = (
+				AF8AAB237C1425BFE824A342 /* BlinkMore */,
+				C635D038C5F6C86EE57A1501 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B43A2E0EC5A70C9856705DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				616E446DC1B530B1981F83D2 /* EyeTrackingService.swift */,
+				F48D0C8A20F2F6E9DF02A008 /* FadeService.swift */,
+				1F3C1FA789D9C85D3678D1DA /* PermissionsService.swift */,
+				092981BCDD7B76301692366E /* PreferencesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		215D8F3A7D53060A98231538 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4982A22978038B238387E3DC /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2AEF8D7EA380200F9D38D19C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AFAB70909D1EB94D857003B8 /* AppDelegate.swift */,
+				EA6274443732C120E6818BB2 /* BlinkMoreApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2BA26C40C7D5477D2B4629CC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				28371052C9220D6741036EC3 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		344086177A7AE2A944A8A9A4 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				96990187F69F945E4D702804 /* StatusBarController.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		8F89DB1DB4479A0A0E22EAFE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				344086177A7AE2A944A8A9A4 /* MenuBar */,
+				215D8F3A7D53060A98231538 /* Onboarding */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AF8AAB237C1425BFE824A342 /* BlinkMore */ = {
+			isa = PBXGroup;
+			children = (
+				D74ECB0A1756F16821BAFFD1 /* Assets.xcassets */,
+				40BC959493BA54E0AA18F176 /* BlinkMore.entitlements */,
+				58B89E6BCD453ED12AC460E8 /* Info.plist */,
+				2AEF8D7EA380200F9D38D19C /* App */,
+				0B43A2E0EC5A70C9856705DE /* Services */,
+				8F89DB1DB4479A0A0E22EAFE /* UI */,
+				2BA26C40C7D5477D2B4629CC /* Utilities */,
+			);
+			path = BlinkMore;
+			sourceTree = "<group>";
+		};
+		C635D038C5F6C86EE57A1501 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				396C10B9D2501D882031A1F4 /* BlinkMore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A499F9BF1F378AA60710D786 /* BlinkMore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8EB146BEA09638B216B0BE /* Build configuration list for PBXNativeTarget "BlinkMore" */;
+			buildPhases = (
+				3AFC30FC512440F2BF2C3C1D /* Sources */,
+				14583446C5D3D00B3C1698E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlinkMore;
+			packageProductDependencies = (
+			);
+			productName = BlinkMore;
+			productReference = 396C10B9D2501D882031A1F4 /* BlinkMore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83A82B5964AD9C6B48F1BE40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = A89C4EB5D6F8396DC5F97AFF /* Build configuration list for PBXProject "BlinkMore" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 02EB5B5CE8483DBDA9644115;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C635D038C5F6C86EE57A1501 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A499F9BF1F378AA60710D786 /* BlinkMore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14583446C5D3D00B3C1698E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F3C53D251DD0F2F7C3C6D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AFC30FC512440F2BF2C3C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592643FF5AE6FB9714F38122 /* AppDelegate.swift in Sources */,
+				3E7B7EA68B894E67A318AF90 /* BlinkMoreApp.swift in Sources */,
+				E849CB6418AB167AF3BF0D92 /* Constants.swift in Sources */,
+				2C73D82D0B697590672FA806 /* EyeTrackingService.swift in Sources */,
+				28DD7ADC6C71693A81314DFA /* FadeService.swift in Sources */,
+				7EFD0FF97468126D2527E3FF /* OnboardingView.swift in Sources */,
+				B3A37C3E9532FF15176EE9E0 /* PermissionsService.swift in Sources */,
+				8D50A5ED492971CC35568C81 /* PreferencesService.swift in Sources */,
+				76EA3CF5A126D58471CCFDCA /* StatusBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7248D823C7FFD7F0373F42C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlinkMore/BlinkMore.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BlinkMore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B4A9F710FC40365CCC2ED102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlinkMore/BlinkMore.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BlinkMore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D03D2219EE6FB44E12A5927D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = BlinkMore/BlinkMore.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BlinkMore/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oxremy.BlinkMore;
+				PRODUCT_NAME = BlinkMore;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+			};
+			name = Release;
+		};
+		D81B214C48209A26584465E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = BlinkMore/BlinkMore.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BlinkMore/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oxremy.BlinkMore;
+				PRODUCT_NAME = BlinkMore;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A89C4EB5D6F8396DC5F97AFF /* Build configuration list for PBXProject "BlinkMore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81B214C48209A26584465E6 /* Debug */,
+				D03D2219EE6FB44E12A5927D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE8EB146BEA09638B216B0BE /* Build configuration list for PBXNativeTarget "BlinkMore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7248D823C7FFD7F0373F42C7 /* Debug */,
+				B4A9F710FC40365CCC2ED102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83A82B5964AD9C6B48F1BE40 /* Project object */;
+}
